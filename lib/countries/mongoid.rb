@@ -1,5 +1,5 @@
 module ISO3166
-  class Country
+  class Country < String
     def mongoize
       ISO3166::Country.mongoize(self)
     end
